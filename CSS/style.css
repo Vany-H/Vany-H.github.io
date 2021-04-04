@@ -135,7 +135,7 @@ img[src="./img/ico_knife.png"]{
     border: 1px solid rgba(128, 128, 128, 0.849);
 
     border-radius: 30%;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 img[src="./img/ico_knife.png"]:hover{
