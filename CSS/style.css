@@ -64,7 +64,7 @@ div{
 
     margin: 5px 5px 5px 5px;
 
-    height: calc(100vh * 0.3);
+    height: calc(100vw * 0.24);
 }
 
 div>div{
@@ -123,8 +123,8 @@ img[src="./img/ico_knife.png"]{
     opacity: 0.95;
 
     position: absolute;
-    right: 8%;
-    top: 13%;
+    right: 7%;
+    top: 9%;
 
     width: 23%;
     height: calc(100vw * 0.031);
@@ -161,7 +161,7 @@ img[src="./img/ico_knife.png"]:hover{
     margin: 0;
     font-family: "ArialBold";
     font-weight: 600;
-    font-size: 20px;
+    font-size: 150%;
 
     color: black;
 }
