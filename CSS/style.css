@@ -10,7 +10,6 @@ body{
 
 section{
     width: 70%;
-    height: 30%;
 
     position: absolute;
     left: 15%;
@@ -47,6 +46,12 @@ a:link{
     font-size: 14px;
     text-decoration: none;
 
+    overflow:hidden;
+    display: block;
+    height: 32px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
     color: black;
 }
 
@@ -60,17 +65,20 @@ div{
 
     background-color: rgb(223, 223, 223);
 
+    padding: 1%;
+
     flex-direction:row;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
 
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
 
     margin: 5px 5px 5px 5px;
 
-    height: calc(100vw * 0.24);
+    height: auto;
+    width: auto;
 
-    min-width: 760px;
+    
     min-height: 310px;
 }
 
@@ -98,9 +106,22 @@ div>div{
 div:first-child{
     border-left: none;
 }
-
-div:last-child{
+div:first-child{
     border-right: none;
+}
+div:nth-child(5n){
+    border-right: none;
+}
+div:nth-child(5n+6){
+    border-left: none;
+}
+div:nth-child(n+6){
+    border-top: 1px solid rgba(0, 0, 0, 0.250);
+}
+
+.agn{
+    height: 35px;
+    min-height: 0;
 }
 
 section>div>div:hover{
