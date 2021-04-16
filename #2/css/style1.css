@@ -1,0 +1,14 @@
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"] + label::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid lime;
+}
+input[type="radio"]:checked + label::before{
+    background-color: limegreen;
+}

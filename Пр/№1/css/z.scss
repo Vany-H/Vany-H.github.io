@@ -1,0 +1,38 @@
+
+/*@media (max-height: 450px) {
+    .baner__body__header-small{
+        font-size: 23px;
+    }
+
+    .baner__body__header-big{
+        font-size: 115px;
+    }
+}*/
+
+@media (max-width: 480px) {
+    .baner__body__header-small{
+        font-size: 15px;
+    }
+
+    .baner__body__header-big{
+        font-size: 80px;
+    }
+
+    .manu{
+        //position: absolute;
+    
+        left: 303px;
+        top: 36px;
+    }
+    
+    .manu::before{
+        content: url("../img/logo.svg");
+        width: 12px;
+        height: 12px;
+    }
+
+    .link{
+        font-size: 11px;
+    }
+    
+}

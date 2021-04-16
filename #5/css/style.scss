@@ -1,0 +1,157 @@
+@import "./anim";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.traffic-light{
+    width: 110px;
+    height: 350px;
+
+    clip-path: polygon(20% 100%, 80% 100%, 100% 90%, 100% 10%, 80% 0, 20% 0, 0 10%, 0 90%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(34, 34, 34);
+    margin: 1%;
+
+    border: 3px solid black;
+}
+
+.traffic-light__green{
+    border-radius: 50%;
+    background-color: green;
+    border-top: 7px solid rgb(0, 0, 0);
+
+    animation: 25s linear infinite green;
+
+    width: 100px;
+    height: 100px;
+}
+
+.traffic-light__yellow{
+    border-radius: 50%;
+    background-color: yellow;
+    border-top: 7px solid rgb(0, 0, 0);
+
+    animation: 12.5s linear infinite yellow;
+
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.traffic-light__red{
+    border-radius: 50%;
+    background-color: red;
+    border-top: 7px solid rgb(0, 0, 0);
+
+    animation: 25s linear infinite red;
+
+    width: 100px;
+    height: 100px;
+}
+
+.number{
+    width: 33%;
+    height: 68%;
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 1%;
+
+    display: grid;
+    grid-template-columns: 4% 1fr 4%;
+    grid-template-rows: 2% 1fr 2% 1fr 2%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.number__block:nth-child(1){
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+    background-color: green;
+    animation: 12.5s linear infinite b_1;
+
+    grid-area: b;
+}
+.number__block:nth-child(2){
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+    background-color: green;
+    animation: 12.5s linear infinite b_2;
+
+    grid-area: c;
+}
+.number__block:nth-child(3){
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+    background-color: green;
+    animation: 12.5s linear infinite b_3;
+
+    grid-area: d;
+}
+.number__block:nth-child(4){
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+    background-color: green;
+    animation: 12.5s linear infinite b_4;
+
+    grid-area: e;
+}
+.number__block:nth-child(5){
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+    background-color: green;
+    animation: 12.5s linear infinite b_5;
+
+    grid-area: f;
+}
+.number__block:nth-child(6){
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+    background-color: green;
+    animation: 12.5s linear infinite b_6;
+
+    grid-area: g;
+}
+.number__block:nth-child(7){
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+    background-color: green;
+    animation: 12.5s linear infinite b_7;
+
+    grid-area: h;
+}
+.number__block:nth-child(8){
+    grid-area: a;
+}
+.number__block:nth-child(9){
+    grid-area: l;
+}
+
+.number{
+    grid-template-areas: "b b b" "c a d" "e e e" "f l g" "h h h";
+    animation: 12.5s linear infinite num-op;
+}

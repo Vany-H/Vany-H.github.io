@@ -1,0 +1,127 @@
+@keyframes green{
+    0%{background-color: rgba(0, 0, 0, 0.767);}
+    10%{background-color: green;}
+    
+    30%{background-color: green;}
+    33%{background-color: rgba(0, 0, 0, 0.767);}
+    35%{background-color: green;}
+    38%{background-color: rgba(0, 0, 0, 0.767);}
+    40%{background-color: green;}
+    43%{background-color: rgba(0, 0, 0, 0.767);}
+    45%{background-color: green;}
+    47%{background-color: rgba(0, 0, 0, 0.767);}
+
+    50%{background-color: green;}
+    60%{background-color: rgba(0, 0, 0, 0.767);}
+    100%{background-color: rgba(0, 0, 0, 0.767);}
+}
+
+@keyframes red{
+    0%{background-color: red;}
+    10%{background-color: rgba(0, 0, 0, 0.767);}
+    50%{background-color: rgba(0, 0, 0, 0.767);}
+    60%{background-color: red}
+    100%{background-color: red;}
+}
+
+@keyframes yellow{
+    0%{background-color: yellow;}
+    10%{background-color: yellow;}
+    15%{background-color: rgba(0, 0, 0, 0.767);}
+    95%{background-color: rgba(0, 0, 0, 0.767);}
+    100%{background-color: yellow;}
+}
+
+@keyframes b_1{
+    0%{opacity: 1;}
+    59%{opacity: 1;}
+    60%{opacity: 0;}
+    69%{opacity: 0;}
+    70%{opacity: 1;}
+    89%{opacity: 1;}
+    90%{opacity: 0;}
+    99%{opacity: 0;}
+}
+@keyframes b_2{
+    0%{opacity: 1;}
+    29%{opacity: 1;}
+    30%{opacity: 0;}
+    39%{opacity: 0;}
+    40%{opacity: 1;}
+    69%{opacity: 1;}
+    70%{opacity: 0;}
+    99%{opacity: 0;}
+}
+
+@keyframes b_3{
+    0%{opacity: 1;}
+    39%{opacity: 1;}
+    40%{opacity: 0;}
+    59%{opacity: 0;}
+    60%{opacity: 1;}
+    99%{opacity: 1;}
+}
+
+@keyframes b_4{
+    0%{opacity: 0;}
+    9%{opacity: 0;}
+    10%{opacity: 1;}
+    29%{opacity: 1;}
+    30%{opacity: 0;}
+    39%{opacity: 0;}
+    40%{opacity: 1;}
+    89%{opacity: 1;}
+    90%{opacity: 0;}
+    99%{opacity: 0;}
+}
+
+@keyframes b_5{
+    0%{opacity: 1;}
+    9%{opacity: 1;}
+    10%{opacity: 0;}
+    19%{opacity: 0;}
+    20%{opacity: 1;}
+    29%{opacity: 1;}
+    30%{opacity: 0;}
+    39%{opacity: 0;}
+    40%{opacity: 1;}
+    49%{opacity: 1;}
+    50%{opacity: 0;}
+    79%{opacity: 0;}
+    80%{opacity: 1;}
+    89%{opacity: 1;}
+    90%{opacity: 0;}
+    99%{opacity: 0;}
+}
+
+@keyframes b_6{
+    0%{opacity: 1;}
+    79%{opacity: 1;}
+    80%{opacity: 0;}
+    89%{opacity: 0;}
+    90%{opacity: 1;}
+    99%{opacity: 1;}
+}
+
+@keyframes b_7{
+    0%{opacity: 1;}
+    29%{opacity: 1;}
+    30%{opacity: 0;}
+    39%{opacity: 0;}
+    40%{opacity: 1;}
+    59%{opacity: 1;}
+    60%{opacity: 0;}
+    69%{opacity: 0;}
+    70%{opacity: 1;}
+    89%{opacity: 1;}
+    90%{opacity: 0;}
+    99%{opacity: 0;}
+}
+
+@keyframes num-op{
+    0%{opacity: 0;}
+    7%{opacity: 0;}
+    15%{opacity: 1;}
+    98%{opacity: 1;}
+    100%{opacity: 0;}
+}

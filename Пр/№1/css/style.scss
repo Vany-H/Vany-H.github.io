@@ -1,0 +1,358 @@
+@import "_normalize.scss";
+@import "font_css.scss";
+
+$font_size: 18px;
+$font_famil: "OpenSans-Bold", sans-serif;
+$font_color: white;
+$font_color_2: black;
+$backcolor: #16DCF0;
+
+
+.baner{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("../img/mo-baghdadi-FCK6ktqZWqQ-unsplash\(1\)\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    //position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    //justify-self: flex-start;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+    width: 80%;
+    height: 10%;
+}
+
+.manu{
+    //position: absolute;
+
+    left: 303px;
+    top: 36px;
+}
+
+.manu::before{
+    content: url("../img/logo.svg");
+    width: 22px;
+    height: 22px;
+}
+
+.manu__name{
+    font-family: $font_famil;
+    font-size: $font_size;
+    color: $font_color;
+
+    border-bottom: 2px solid white;
+}
+
+.manu__list{
+    list-style: none;
+    padding-left: 23px;
+    margin: 0;
+}
+
+.manu__list:nth-child(n){
+    font-family: $font_famil;
+    font-size: $font_size;
+    color: $font_color;
+}
+
+.navigation{
+    //position:absolute;
+    left: 40%;
+
+    height: 33px;
+    width: 27%;
+}
+
+.navigation__list{
+    width: 100%;
+    height: 100%;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+    margin: 0;
+
+    justify-content: space-between;
+}
+
+.link{
+    font-family: $font_famil;
+    font-size: $font_size;
+    color: $font_color;
+
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline white;
+}
+
+.search{
+    display: inline-block;
+}
+
+.search__input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    width: 50%;
+}
+
+.baner__body{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.baner__body__header-small{
+    //display: inline-block;
+    font-family: "OpenSans-Light", sans-serif;
+    font-size: 33px;
+    color: $font_color;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.baner__body__header-big{
+    font-family: $font_famil;
+    font-size: 165px;
+    color: $font_color;
+
+    margin: 0;
+}
+
+.body__button{
+    width: 150px;
+    height: 45.99px;
+
+    align-self: center;
+
+    background-color: $backcolor;
+
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__link{
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 22px;
+    color: $font_color;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.gallery__header{
+    font-family: $font_famil;
+    font-size: 50px;
+    color: black;
+
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.gallery__text{
+    font-family: "OpenSans-Light", sans-serif;
+    font-size: $font_size;
+    color: $font_color_2;
+
+    text-align: center;
+}
+
+.gallery__block-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+
+    width: 60%;
+}
+
+.gallery__cart{
+    width: 32%;
+    position: relative;
+}
+
+.gallery__cart:hover{
+
+
+    .gallery__box-text{
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+        height: 40%;
+    
+        display: flex;
+        flex-direction: column;
+    
+        background: linear-gradient(left bottom, #00C7DC, #00C7DC46);
+        transition: opacity 0.4s linear;
+    }
+}
+
+.gallery__image{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__box-text{
+    opacity: 0;
+}
+
+.gallery__card-header{
+    font-family: $font_famil;
+    font-size: 40px;
+    color: $font_color;
+    margin: 4% 2% 0 7%;
+}
+
+.gallery__cart-text{
+    font-family: "OpenSans-Light", sans-serif;
+    font-size: $font_size;
+    color: $font_color;
+
+    margin: 0 2% 0 7%;
+}
+
+.gallery__link{
+    font-family: $font_famil;
+    font-size: 25px;
+    color: $font_color;
+
+    text-decoration: none;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+
+.sale-baner{
+    width: 100vw;
+    height: 30vw;
+
+    background-image: url("../img/baner_sect.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sale-baner__info{
+    width: 55%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sale-baner__sale-header{
+    font-family: $font_famil;
+    font-size: 100px;
+    color: $font_color;
+
+    width: 55%;
+    margin-bottom: 0;
+}
+
+.sale-baner__header{
+    font-family: $font_famil;
+    font-size: 48px;
+    color: $font_color;
+
+    width: 55%;
+    margin-bottom: 0;
+}
+
+.sale-baner__text{
+    font-family: "OpenSans-Light", sans-serif;
+    font-size: 16px;
+    color: $font_color;
+
+    width: 55%;
+    margin-top: 0;
+}
+
+.sale-baner__button{
+    font-family: $font_famil;
+    font-size: 20px;
+    color: $font_color;
+
+    width: 15%;
+    height: 10%;
+    margin-right: 40%;
+
+    background-color: $backcolor;
+    border: 0;
+    border-radius: 5%;
+}
+
+.line{
+    width: 100vw;
+    height: 5vw;
+
+    margin: 2% 0 2%;
+}
+
+.line__block{
+    width: 50%;
+    height: 100%;
+
+    border-right: 1px solid gray;
+}
+
+
+.logo-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-bar__logo:first-child{
+    background: linear-gradient(right, transparent, white), url("../img/logo/logo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-bar__logo:last-child{
+    background: linear-gradient(left, transparent, white), url("../img/logo/logo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-bar__logo{
+    margin: 1% 2%;
+
+    width: 16%;
+    height: 8vw;
+}

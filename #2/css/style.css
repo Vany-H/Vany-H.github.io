@@ -1,0 +1,23 @@
+option {
+    color: blue;
+}
+
+select>option+option {
+    color:green;
+}
+
+[value="2"]{
+    color:pink;
+}
+
+[value="1"]+[value="2"]{
+    color: purple
+}
+
+#id-select>option+option {
+    color:red
+}
+
+html body> #id-select >option[value="1"]+option[value="2"]{
+    color:yellow
+}
